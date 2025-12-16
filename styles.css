@@ -338,9 +338,14 @@ h2{
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-#HackpadImg, #PCBImg {
+#HackpadImg {
     width: 43vw;
-
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+#PCBImg {
+    width: 43vw;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-bottom: 20px;
