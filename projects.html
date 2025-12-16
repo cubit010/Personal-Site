@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Cubit's Website</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="header-text">
+                Website of
+            </div>
+            <div class="logo-wrapper">
+                <img src="assets/Cubit.svg" alt="Cubit Logo" id="header-logo">
+            </div>
+        </header>
+
+        <aside id="sidebar">
+            <a href="index.html">Home</a>
+            <a href="#">Projects</a>
+        </aside>
+        <script src="menu.js"></script>  
+
+        <main>
+            <section class="intro">
+                    <h1>Here are some projects I've worked on!</h1>
+                    <p>(Note that this is still a work in progress)</p>
+                </section>
+            <div class="projects-container">
+                <div class="floating-box project-box">
+                    <h2><a href="https://github.com/cubit010/Osmium">Osmium Chess Engine</a></h2>
+                    <p>A (relatively) high-performance chess engine written in C# Net8.0</p>
+                    <img src="assets/osmium.png" alt="Osmium playtest screenshot" id="OsmiumImg">
+                </div>
+
+                <div class="floating-box project-box">
+                    <h2><a href="https://github.com/cubit010/Macropad">Hackpad</a></h2>
+                    <p>A custom Macropad (yet to be physcially made) </p>
+                    <img src="/assets/hackpad.png" alt="Hackpad design screenshot" id="HackpadImg">
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+           <a href="https://github.com/cubit010" class="github-footer-btn" target="_blank" aria-label="Visit my GitHub Profile">
+                <img src="/assets/github-mark-white.svg" alt="GitHub Icon">
+            </a>
+        </footer>
+    </body>

@@ -1,0 +1,346 @@
+
+.bbh-bogle-regular {
+  font-family: "BBH Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 
+<weight>: Use a value from 100 to 900
+<uniquifier>: Use a unique and descriptive class name 
+*/
+.montserrat-medium {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Sidebar styles */
+
+#sidebar {
+    box-sizing: border-box;   
+    position: fixed;
+    top: 50px;
+    left: -160px;             /* partially hidden */
+    width: 200px;
+    max-height: 60vh;
+    background: #2c2c2c;
+    color: white;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0 16px 16px 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    overflow-y: auto;         
+    overflow-x: hidden;       /* prevent horizontal scrollbar */
+    transition: left 0.3s ease;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#sidebar:hover {
+    left: -10px; /* Slide the sidebar into view */
+}
+
+
+#sidebar a {
+    display: block;          
+    width: 100%;             
+    padding: 0.5rem 0rem;    /* clickable area */
+    margin-bottom: 0.5rem;     /* spacing between items */
+    color: white;
+    text-decoration: none;
+    pointer-events: auto;    /* links still clickable */
+    font-size: 1em;          
+    background: transparent;
+
+    position: sticky; 
+   
+    top: 0; 
+   
+    z-index: 100;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    font-size: 1em;
+    font-family: "BBH Bogle", sans-serif;
+    font-weight: 150;
+    text-align: center;
+    background-color: #f0f0f0;
+    background: linear-gradient(90deg,
+                #ff5542 0%,
+                #eef445 25%,
+                #6b7aff 50%,
+                #8250f8 75%,
+                #a1ed5d 100%);
+    background-size: 400% 400%;
+    animation: flow 8s ease infinite;
+    padding: 10px;
+    padding-bottom: 0px;
+    letter-spacing: 0.05em; 
+    
+}
+
+
+
+.cubitsvg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.main-header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+   
+    overflow: visible; 
+    
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; 
+}
+
+
+.header-text {
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 0;
+    width: 100%;
+    z-index: 900;
+}
+
+
+.logo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+   
+    position: relative; 
+    padding: 10px;
+    box-sizing: border-box; 
+    z-index: 1000;
+
+    background: linear-gradient(90deg,
+                #ff5542 0%,
+                #eef445 25%,
+                #6b7aff 50%,
+                #8250f8 75%,    
+                #a1ed5d 100%);
+    background-size: 400% 400%;
+    animation: flow 8s ease infinite;
+   
+ border-bottom: #2c2c2c 4px solid;
+}
+
+
+#header-logo {
+    
+    
+    width: calc(var(--logo-width-val, 30) * 1vw); 
+    
+    max-width: 3000px;
+    height: auto;
+    
+
+    will-change: width;
+    
+    transition: none; 
+}
+
+
+.logo-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+
+
+#carimage {
+    width: 35vw;
+    height: 150vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes flow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.two-col {
+    display: grid;
+    gap: 40px;             /* space between items */
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+}
+
+.text {
+    justify-self: start; /* stick to left wall */
+}
+
+.car {
+    justify-self: right;   /* stick to right wall */
+}
+
+body {
+    margin: 0;
+}
+
+main{
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+p, li {
+    font-size: 1em;
+}
+
+p#carimgdesc {
+    font-size: 1em;
+    color: gray;
+    margin: 0px;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+h2{
+    font-size: 1.25em;
+}
+
+.floating-box{
+    max-width: 4000px;
+    width: auto;
+    border-radius: 30px;
+    background-color: #b9f783;
+    padding: 40px;
+    box-shadow: #2c2c2c 0px 8px 24px;
+    border: 4px solid rgb(85, 84, 84);
+}
+
+.floating-box#box2 {
+    display: flex;             
+    justify-content: center;  
+    align-items: center;       
+    flex-direction: column;
+    background-color: #f0ff80;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    
+
+}
+
+.projects-container {
+    
+    display: grid;
+   
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; /* Space between the project boxes */
+    margin-top: 30px; /* Space below the introduction box */
+}
+
+
+.project-box {
+    
+    padding: 10px;
+    background-color: #f0ff80; 
+    /* Center text within the box */
+    text-align: center;
+    /* Ensure all boxes are the same size/stretch in the grid */
+    min-height: 200px;
+}
+
+/* Style the links within the project boxes */
+.project-box h2 a {
+    text-decoration: none; /* Remove underline from the project link */
+    color: #333;
+    /* Add a hover effect for a better user experience */
+    transition: color 0.3s; 
+}
+
+.project-box h2 a:hover {
+    color: #ff5542; /* hover color  */
+}
+
+/* Adjust the main floating-box style for the introduction */
+.intro-box {
+    text-align: center;
+    margin-bottom: 30px; /* Ensure space before the projects container */
+    background-color: #b9f783; /* Keep original color */
+}
+
+.github-footer-btn {
+    
+    position: fixed; 
+    bottom: 15px;
+    right: 15px; 
+    z-index: 1000; 
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    padding: 7px;
+    padding-bottom: 9px;
+    
+    background-color: #333; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+    text-decoration: none; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.github-footer-btn img {
+    width: 95%; 
+    height: auto;
+     
+}
+
+.github-footer-btn:hover {
+    background-color: #555; /*  lighter on hover */
+    transform: scale(1.05); /* glow on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6); /* more shadow on hover */
+}
+
+
+#c6356img, #c10000img, #c11111img, #c12340img{
+    width: 20vw;
+    height: auto;
+}
+
+#OsmiumImg{
+    width: 43vw;
+
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+#HackpadImg {
+    width: 35vw;
+
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
